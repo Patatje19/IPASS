@@ -1,0 +1,18 @@
+#############################################################################
+#
+# makefile.native common settings for Native projects
+#
+# (c) Wouter van Ooijen (www.voti.nl) 2017
+#
+# This file is in the public domain.
+#
+#############################################################################
+
+# SETTINGS FOR NATIVE PC PROJECTS
+TARGET            := native
+
+# ENABLE EXEPTIONS (DISABLED BY DEFAULT BY BMPTK)
+PROJECT_CPP_FLAGS += -fexceptions
+
+# DEFER TO THE MAKEFILE.LINK
+include           $(RELATIVE)/Makefile.link
